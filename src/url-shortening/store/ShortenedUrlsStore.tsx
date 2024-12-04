@@ -2,8 +2,8 @@ import { create } from "zustand";
 import {
   ShortenedUrl,
   ShortenedUrlCreationRequest,
-} from "../url-shortening/interfaces/interfaces";
-import UrlShortenerService from "@/lib/services/UrlShortenerService";
+} from "../interfaces/interfaces";
+import UrlShortenerService from "@/url-shortening/services/UrlShortenerService";
 
 interface ShortenedUrlStore {
   shortenedUrls: ShortenedUrl[];

@@ -1,4 +1,3 @@
-import React from "react";
 import useUrlRedirection from "../hooks/useUrlRedirection";
 
 const RedirectionPage = () => {

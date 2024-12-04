@@ -1,6 +1,4 @@
-import useShortenedUrlStore from "@/store/ShortenedUrlsStore";
 import ShortenedUrlsTable from "../components/ShortenedUrlsTable";
-import UrlShortenerInput from "../components/UrlShortenerInput";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import useUrlShortener from "../hooks/useUrlShortener";

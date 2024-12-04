@@ -1,4 +1,4 @@
-import UrlShortenerService from "@/lib/services/UrlShortenerService";
+import UrlShortenerService from "@/url-shortening/services/UrlShortenerService";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 

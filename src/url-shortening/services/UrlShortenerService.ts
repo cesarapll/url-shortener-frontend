@@ -1,5 +1,5 @@
-import axiosInstance from "../axios";
-import { ShortenedUrl, ShortenedUrlCreationRequest } from '../../url-shortening/interfaces/interfaces';
+import axiosInstance from "../../lib/axios";
+import { ShortenedUrl, ShortenedUrlCreationRequest } from '../interfaces/interfaces';
 
 
 const UrlShortenerService = {

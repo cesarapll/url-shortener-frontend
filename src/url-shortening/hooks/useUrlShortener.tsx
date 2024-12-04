@@ -1,4 +1,4 @@
-import useShortenedUrlStore from "@/store/ShortenedUrlsStore";
+import useShortenedUrlStore from "@/url-shortening/store/ShortenedUrlsStore";
 import { ShortenedUrlCreationRequest } from "../interfaces/interfaces";
 
 const useUrlShortener = () => {
