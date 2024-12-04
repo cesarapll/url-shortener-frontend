@@ -21,6 +21,8 @@ Aplicación para acortar URL's
 - Ejecutar el comando `firebase login` para iniciar sesión con la CLI.
 - Ejecutar el comando `firebase deploy` para desplegar el contenido generado en la carpeta `dist`.
 
+* Nota adicional: Actualizar el CORS con la URL generada para la aplicación.
+
 
 ## Versión actual en producción
 
