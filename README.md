@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# url-shortener-frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación para acortar URL's
 
-Currently, two official plugins are available:
+## Tecnologías principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18.x
+- shadcn/ui (https://ui.shadcn.com/)
 
-## Expanding the ESLint configuration
+## Ejecución local
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Crear el archivo `.env.local`. Luego, copiar el contenido del archivo `.env.example`. Editar las variables de acuerdo a las URL's requeridas.
+- Instalar el gestor de paquetes `pnpm` (`npm install -g pnpm`) y luego ejecutar el comando `pnpm install` para instalar las dependencias del proyecto.
+- Ejecutar el comando `pnpm run dev` para levantar el proyecto. Recordar tener levantado el proyecto `url-shortener-backend` en local.
 
-- Configure the top-level `parserOptions` property like this:
+## Despliegue
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Crear un archivo `.env.{entorno}` para el entorno que se desee: `(testing | production)`.
+- Ejecutar el comandando `pnpm run build:dev` para _testing_ y `pnpm run build:prod` para _production_.
+- Crear una cuenta en Firebase y crear un proyecto nuevo por cada ambiente. Luego configurar Firebase CLI en su equipo de acuerdo a su documentación oficial (https://firebase.google.com/docs/cli).
+- Ejecutar el comando `firebase login` para iniciar sesión con la CLI.
+- Ejecutar el comando `firebase deploy` para desplegar el contenido generado en la carpeta `dist`.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Versión actual en producción
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Link: https://url-shortener-af159.web.app/

@@ -21,7 +21,7 @@ const ShortenedUrlsTable = ({ shortenedUrls }: ShortenedUrlsTableProps) => {
           <TableHead>Id</TableHead>
           <TableHead>Code</TableHead>
           <TableHead>Original Url</TableHead>
-          <TableHead className='text-left'>Actions</TableHead>
+          <TableHead className='text-right'>Actions</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
