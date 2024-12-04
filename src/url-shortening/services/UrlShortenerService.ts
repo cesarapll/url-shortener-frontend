@@ -29,8 +29,7 @@ const UrlShortenerService = {
         const response = await axiosInstance.delete(
             `/shortened-urls/${id}`
         )
-
-        return response.data.data;
+        return response.data;
     }
 }
 
