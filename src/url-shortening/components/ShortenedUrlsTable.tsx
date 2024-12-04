@@ -3,14 +3,11 @@ import {
   TableBody,
   TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import useShortenedUrlStore from "@/store/ShortenedUrlsStore";
 import { ShortenedUrl } from "../interfaces/interfaces";
-import { Button } from "@/components/ui/button";
 import ActionsTableCell from "./ShortenedUrlActionsTableCell";
 
 interface ShortenedUrlsTableProps {
@@ -19,14 +16,13 @@ interface ShortenedUrlsTableProps {
 
 const ShortenedUrlsTable = ({ shortenedUrls }: ShortenedUrlsTableProps) => {
   return (
-    <Table className='max-w-md'>
-      <TableCaption>A list of your shortened URL's.</TableCaption>
+    <Table className='max-w-[100%]'>
       <TableHeader>
         <TableRow>
           <TableHead>Id</TableHead>
           <TableHead>Code</TableHead>
           <TableHead>Original Url</TableHead>
-          <TableHead>Actions</TableHead>
+          <TableHead className='text-left'>Actions</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>

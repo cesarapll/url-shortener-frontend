@@ -20,7 +20,7 @@ const UrlShortenerMainPage = () => {
   }, []);
 
   return (
-    <div className='flex items-center justify-center gap-8 h-screen flex-col'>
+    <div className='flex items-center justify-center gap-8 h-screen flex-col min-w-[45%]'>
       <div className='flex justify-between flex-row w-[100%]'>
         <p>Shortened Urls</p>
         <Button onClick={goToCreationPage}>Short URL</Button>

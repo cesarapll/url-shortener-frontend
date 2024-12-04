@@ -3,7 +3,6 @@ import {
   ShortenedUrl,
   ShortenedUrlCreationRequest,
 } from "../url-shortening/interfaces/interfaces";
-import axios from "axios";
 import UrlShortenerService from "@/lib/services/UrlShortenerService";
 
 interface ShortenedUrlStore {

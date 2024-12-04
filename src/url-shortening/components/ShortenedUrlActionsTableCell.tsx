@@ -19,7 +19,7 @@ const ActionsTableCell = ({ id, code }: ShortenedUrlActionsProps) => {
   };
 
   return (
-    <TableCell className='flex flex-row space-x-2'>
+    <TableCell className='flex flex-row space-x-2 justify-end'>
       <Button className='w-20' onClick={handleRedirection}>
         Redirect
       </Button>
