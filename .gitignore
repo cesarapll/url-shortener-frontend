@@ -27,3 +27,5 @@ dist-ssr
 .env.local
 .env.testing
 .env.production
+
+.firebase
